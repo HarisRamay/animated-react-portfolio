@@ -51,7 +51,7 @@ export default function Home() {
 
         <div className="mx-auto w-full max-w-6xl">
           <p className="hero-small mb-7 text-sm uppercase tracking-[.35em] text-white/40">
-            Frontend Developer / React
+            Software Engineer & Frontend Developer
           </p>
 
           <h1 className="max-w-5xl text-6xl font-semibold leading-[.88] tracking-[-.07em] md:text-[9rem]">

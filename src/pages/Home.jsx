@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="mt-16 flex items-center gap-5 text-white/35">
             <ArrowDown className="animate-bounce" size={18} />
-            <span className="text-xs uppercase tracking-[.25em]">Scroll to explore</span>
+            <span className="text-xs uppercase tracking-[.25em]">Scroll to explore.</span>
           </div>
         </div>
       </section>

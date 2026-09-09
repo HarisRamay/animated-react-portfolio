@@ -63,7 +63,7 @@ export default function Home() {
           
           <div className="mt-10 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
             <p className="hero-copy max-w-xl text-base leading-7 text-white/50 md:text-lg">
-              I create clean, interactive web experiences with React,
+              I create clean, structured and interactive web experiences with React,
               Tailwind CSS and modern animation.
             </p>
 

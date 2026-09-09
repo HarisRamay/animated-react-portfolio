@@ -7,9 +7,31 @@ on:
       - master
 
 jobs:
-  build:
+  production:
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build website
+        run: chmod +x node_modules/.bin/vite && npm run build
+
+
+  development:
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    environment: development
 
     steps:
       - name: Checkout code

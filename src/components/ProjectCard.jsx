@@ -26,100 +26,90 @@ export default function ProjectCard({ project, index }) {
             </h3>
           </div>
 
-          {/* Animated Arrow Button */}
-          <button
-            className="
-              group
-              relative
-              flex
-              h-10
-              w-10
-              items-center
-              justify-center
-              rounded-full
-              border
-              border-white/10
-            "
-            aria-label={`View ${project.title}`}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              width="20"
-              height="20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="
-                overflow-visible
-                transition-transform
-                duration-500
-                ease-[cubic-bezier(.22,1,.36,1)]
-                group-hover:translate-x-1
-              "
-            >
-              {/* Diagonal arrow */}
-              <path
-                d="M5 19L19 5"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                className="
-                  transition-all
-                  duration-500
-                  ease-[cubic-bezier(.22,1,.36,1)]
-                  group-hover:opacity-0
-                "
-              />
+         {/* Animated Arrow Button */}
+<button
+  className="
+    group
+    relative
+    flex
+    h-10
+    w-10
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-white/10
+  "
+  aria-label={`View ${project.title}`}
+>
+  <svg
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="overflow-visible"
+  >
+    {/* Original ↗ arrow */}
+    <g
+      className="
+        transition-all
+        duration-500
+        ease-[cubic-bezier(.22,1,.36,1)]
+        group-hover:opacity-0
+        group-hover:translate-x-2
+        group-hover:-translate-y-2
+      "
+    >
+      {/* Diagonal line */}
+      <path
+        d="M5 19L19 5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
 
-              {/* Arrow head */}
-              <path
-                d="M11 5H19V13"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="
-                  transition-transform
-                  duration-500
-                  ease-[cubic-bezier(.22,1,.36,1)]
-                  group-hover:rotate-45
-                "
-                style={{
-                  transformOrigin: "19px 5px",
-                }}
-              />
+      {/* Diagonal arrow head */}
+      <path
+        d="M11 5H19V13"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
 
-              {/* Horizontal arrow */}
-              <path
-                d="M5 12H19"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                className="
-                  opacity-0
-                  transition-all
-                  duration-500
-                  ease-[cubic-bezier(.22,1,.36,1)]
-                  group-hover:opacity-100
-                "
-              />
+    {/* New → arrow */}
+    <g
+      className="
+        opacity-0
+        translate-x-[-8px]
+        transition-all
+        duration-500
+        ease-[cubic-bezier(.22,1,.36,1)]
+        group-hover:opacity-100
+        group-hover:translate-x-0
+      "
+    >
+      {/* Horizontal line */}
+      <path
+        d="M5 12H19"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
 
-              {/* Horizontal arrow head */}
-              <path
-                d="M13 6L19 12L13 18"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="
-                  opacity-0
-                  transition-all
-                  duration-500
-                  ease-[cubic-bezier(.22,1,.36,1)]
-                  group-hover:opacity-100
-                "
-              />
-            </svg>
-          </button>
+      {/* Horizontal arrow head */}
+      <path
+        d="M13 6L19 12L13 18"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </svg>
+</button>
         </div>
 
         {/* Description */}

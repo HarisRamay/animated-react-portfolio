@@ -26,9 +26,9 @@ export default function ProjectCard({ project, index }) {
             </h3>
           </div>
 
-         {/* Animated Arrow Button */}
-<button
-  className="
+          {/* Animated Arrow Button */}
+          <button
+            className="
     group
     relative
     flex
@@ -40,19 +40,19 @@ export default function ProjectCard({ project, index }) {
     border
     border-white/10
   "
-  aria-label={`View ${project.title}`}
->
-  <svg
-    viewBox="0 0 24 24"
-    width="20"
-    height="20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="overflow-visible"
-  >
-    {/* Original ↗ arrow */}
-    <g
-      className="
+            aria-label={`View ${project.title}`}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="overflow-visible"
+            >
+              {/* Original ↗ arrow */}
+              <g
+                className="
         transition-all
         duration-500
         ease-[cubic-bezier(.22,1,.36,1)]
@@ -60,28 +60,28 @@ export default function ProjectCard({ project, index }) {
         group-hover:translate-x-2
         group-hover:-translate-y-2
       "
-    >
-      {/* Diagonal line */}
-      <path
-        d="M5 19L19 5"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
+              >
+                {/* Diagonal line */}
+                <path
+                  d="M5 19L19 5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                />
 
-      {/* Diagonal arrow head */}
-      <path
-        d="M11 5H19V13"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
+                {/* Diagonal arrow head */}
+                <path
+                  d="M11 5H19V13"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
 
-    {/* New → arrow */}
-    <g
-      className="
+              {/* New → arrow */}
+              <g
+                className="
         opacity-0
         translate-x-[-8px]
         transition-all
@@ -90,26 +90,26 @@ export default function ProjectCard({ project, index }) {
         group-hover:opacity-100
         group-hover:translate-x-0
       "
-    >
-      {/* Horizontal line */}
-      <path
-        d="M5 12H19"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
+              >
+                {/* Horizontal line */}
+                <path
+                  d="M5 12H19"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                />
 
-      {/* Horizontal arrow head */}
-      <path
-        d="M13 6L19 12L13 18"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  </svg>
-</button>
+                {/* Horizontal arrow head */}
+                <path
+                  d="M13 6L19 12L13 18"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
         </div>
 
         {/* Description */}
